@@ -1,0 +1,112 @@
+bai1:
+let kiemTraNguyenTo=number=>{
+  let dem = 0;
+  for(let i=2; i<=Math.sqrt(number);i++){
+    if(number%i==0) dem=dem+1;
+
+  }
+  if(dem==0) console.log(number+ 'la so nguyen to')
+  else console.log(number+ 'khong phai so nguyen to')
+  
+}
+
+kiemTraNguyenTo(10);
+
+
+bai2:
+const daoNguocSo=number=>{
+   return number.toString().split('').reverse().join('');
+  }
+  
+
+console.log(daoNguocSo(123))
+
+
+bai 3:
+var demSoLanXuatHien=str=>{
+  let arr = "aasssyuusaybayiq";
+  let dem = 0;
+  for(let i=0;i<arr.length;i++ ){
+    if(str==arr[i]) dem++;
+}
+return dem;
+}
+demSoLanXuatHien("a");
+
+
+bai 4:
+
+var numberMax=number=>{
+  let arr=[9,25,84,15,25,25,62,86];
+  let num =[];
+  for(let a of arr){
+    if(number<a) num.push(a);
+  }
+  console.log(num)
+}
+numberMax(17)
+
+
+bai5:
+
+function changKey(arr) {        
+        return arr.map(obj => ({
+                "id": obj.pk,
+                "ten": obj.lastname,
+                "sodienthoai": obj.phone
+            }))
+
+    }
+
+    console.log(changKey([
+     {pk: 1, lastname: "1123aac", phone: "123456"},
+ ]))
+ 
+
+
+bai6:
+var demSoLanXuatHien=(str,char)=>{
+ 
+  let dem = 0;
+  for(let i=0;i<str.length;i++ ){
+    if(char==str[i]) dem++;
+}
+return dem;
+}
+demSoLanXuatHien("aaaaddwweeerrrtd",'a');
+
+bai9:
+var arrday = [
+    new Date("2020-11-05"),
+    new Date("2020-01-12"),
+    new Date("2020-09-01")
+]
+
+function ngayLonNhat(arr){
+    var dateMax = arr[0];
+    for (var i = 0; i < arr.length; i++){
+        
+        if (arr[i] > dateMax){
+            dateMax = arr[i];
+        }
+    }
+    return dateMax;
+}
+console.log(ngayLonNhat(arrday))
+
+bai10:
+var date = new Date("2020-03-01");
+function checkDay(date){
+  if(date.getDay() == 0){ return ('Day la ngay cuoi tuan')}
+  else{
+    return ('khong phai ngay cuoi tuan')
+  }
+    
+}
+console.log(checkDay(date));
+
+
+
+
+
+
