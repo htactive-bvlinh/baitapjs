@@ -1,16 +1,16 @@
 bai1:
 let kiemTraNguyenTo=number=>{
+  if(number== 0||number== 1) return "khong phai so nguyen to";
   let dem = 0;
   for(let i=2; i<=Math.sqrt(number);i++){
     if(number%i==0) dem=dem+1;
-
   }
-  if(dem==0) console.log(number+ 'la so nguyen to')
-  else console.log(number+ 'khong phai so nguyen to')
+  if(dem==0) return 'la so nguyen to'
+  else return 'khong phai so nguyen to';
   
 }
+kiemTraNguyenTo(96);
 
-kiemTraNguyenTo(10);
 
 
 bai2:
